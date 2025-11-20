@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademicWorks - Курсовые и дипломные работы</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>AcademicWorks</h1>
+                    <span>Работы на заказ</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#works">Библиотека работ</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Войти</button>
+                    <button class="btn btn-primary" id="registerBtn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Курсовые и дипломные работы от профессионалов</h2>
+                <p>Более 5000 готовых работ в нашей библиотеке. Находите, бронируйте и скачивайте мгновенно!</p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" id="exploreWorks">Исследовать работы</button>
+                    <button class="btn btn-outline btn-large" id="orderWork">Заказать работу</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Библиотека работ -->
+    <section class="works-section" id="works">
+        <div class="container">
+            <h2 class="section-title">Библиотека работ</h2>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="subject">Предмет:</label>
+                    <select id="subject">
+                        <option value="all">Все предметы</option>
+                        <option value="economics">Экономика</option>
+                        <option value="analysis">Анализ</option>
+                        <option value="psychology">Финансы</option>
+                        <option value="engineering">Инженерия</option>
+                        <option value="medicine">Медицина</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="work-type">Тип работы:</label>
+                    <select id="work-type">
+                        <option value="all">Все типы</option>
+                        <option value="coursework">Курсовая</option>
+                        <option value="diploma">Дипломная</option>
+                        <option value="essay">Эссе</option>
+                        <option value="report">Отчет</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price-range">Цена:</label>
+                    <select id="price-range">
+                        <option value="all">Любая</option>
+                        <option value="low">До 2000 руб</option>
+                        <option value="medium">2000-5000 руб</option>
+                        <option value="high">Свыше 5000 руб</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="applyFilters">Применить</button>
+            </div>
+            <div class="works-grid" id="worksGrid">
+                <!-- Работы будут загружены через JavaScript -->
+            </div>
+            <div class="load-more">
+                <button class="btn btn-outline" id="loadMore">Загрузить еще</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это работает -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">Как это работает</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Найдите работу</h3>
+                    <p>Используйте фильтры для поиска подходящей работы в нашей библиотеке</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Забронируйте</h3>
+                    <p>Забронируйте понравившуюся работу, чтобы другие не могли ее купить</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Оплатите</h3>
+                    <p>Оплатите работу удобным для вас способом</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Скачайте</h3>
+                    <p>Сразу после оплаты скачайте готовую работу</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">О нас</h2>
+                    <p>AcademicWorks - это платформа, которая помогает студентам найти качественные курсовые и дипломные работы для использования в качестве образцов и источников вдохновения.</p>
+                    <p>Наша команда состоит из профессиональных авторов с опытом работы в различных областях знаний. Мы гарантируем качество и уникальность всех работ в нашей библиотеке.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Работ в библиотеке</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Авторов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="img/Corporate-CEO.gif" alt="О нас">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info">
+                    <h3>Свяжитесь с нами</h3>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <span>radbull2020@yandex.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+7 (999) __-__-__</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Москва</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Оставьте заявку</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AcademicWorks</h3>
+                    <p>Платформа для покупки курсовых и дипломных работ</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul>
+                        <li><a href="#works">Библиотека работ</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Правовая информация</h4>
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Пользовательское соглашение</a></li>
+                        <li><a href="#">Возврат средств</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 AcademicWorks. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Пароль" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+            <p>Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="registerModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Пароль" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Подтвердите пароль" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="#" id="switchToLogin">Войти</a></p>
+        </div>
+    </div>
+
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="workModalContent">
+                <!-- Содержимое модального окна работы -->
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оплата работы</h2>
+            <div id="paymentContent">
+                <!-- Содержимое модального окна оплаты -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
