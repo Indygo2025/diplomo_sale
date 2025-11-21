@@ -1,6 +1,7 @@
 // script.js
 
 // Данные работ (в реальном приложении будут загружаться с сервера)
+
 const worksData = [
     {
         id: 1,
@@ -68,6 +69,75 @@ const worksData = [
         description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
         reserved: false
     }
+    ,
+    {
+        id: 7,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    }
+    ,
+    {
+        id: 8,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    }
+    ,
+    {
+        id: 9,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    },
+    {
+        id: 10,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    },
+    {
+        id: 11,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    },
+    {
+        id: 12,
+        title: "Отчет по практике в юридической фирме",
+        subject: "law",
+        type: "report",
+        price: 1800,
+        pages: 25,
+        year: 2023,
+        description: "Подробный отчет о прохождении практики в юридической фирме с анализом выполненных задач.",
+        reserved: false
+    }
 ];
 
 // DOM элементы
@@ -100,7 +170,7 @@ let currentFilters = {
     type: 'all',
     price: 'all'
 };
-let visibleWorksCount = 6;
+let visibleWorksCount = 4;
 
 // Инициализация
 document.addEventListener('DOMContentLoaded', function() {

@@ -27,10 +27,76 @@ body {
     color: var(--dark-color);
     background-color: #fff;
 }
+ .logo-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .logo-container {
+            height: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+
+        .logo-title {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .logo-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+.logo-5 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .logo-5 .letter {
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            width: 50px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .logo-5 .d { background: #667eea; }
+        .logo-5 .i { background: #764ba2; }
+        .logo-5 .p { background: #ff6b6b; }
+        .logo-5 .l { background: #f093fb; }
+        .logo-5 .o { background: #4ecdc4; }
+        .logo-5 .m { background: #45b7d1; }
+        .logo-5 .o2 { background: #96ceb4; }
+
+
+
+
+
+
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
